@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  font-family: "JetBrains Mono";
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
+  background-position: top -200px left -200px, bottom -200px right -200px;
+  background-repeat: no-repeat;
+
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.card-component {
+  width: 350px;
+  background-color: white;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.profile {
+  position: absolute;
+  top: 100px;
+   left: 50%;
+  transform: translateX(-50%);
+}
+.profile img {
+  border-radius: 50%;
+  border: 3px solid white;
+  object-position: center;
+  object-fit: cover;
+}
+.info {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info h3 {
+  color: hsl(229, 23%, 23%);
+}
+.info span {
+  color: hsl(227, 10%, 46%);
+  font-size: 18px;
+}
+.info p {
+  color: hsl(227, 10%, 46%);
+}
+.footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+.footer h3 {
+  color: hsl(229, 23%, 23%);
+}
+.footer p {
+  color: hsl(227, 10%, 46%);
+  font-size: 12px;
+}
+hr{
+    margin-top: 10px;
+    color: hsl(225, 10%, 92%);
+}
+@media (max-width: 480px) {
+  body {
+    background-position:
+      top -100px left -150px,
+      bottom -100px right -150px;
+  }
+}
